@@ -7,6 +7,31 @@
   </head>
 
   <body>
+    <form action="" method="post" id="song">
+      <label for="SongName">SongName</label><br>
+      <input type="text" id="SongName" name="SongName"><br>
+      <label for="YouTubeLink">YouTubeLink</label><br>
+      <input type="text" id="YouTubeLink" name="YouTubeLink"><br>
+      <label for="dicription">dicription</label><br>
+      <textarea name="dicription" id="dicription" cols="30" rows="10">
+
+      </textarea>
+      <label for="year">Year</label><br>
+      <input type="number" id="year" name="year"><br>
+      <button type="submit" onclick="displaySongInfo()">submit</button>
+   </form>
+   <div style="visibility: hidden;" id="info">
+  <h1>Song Name: <span id="sname"></span></h1>
+  <h1>YouTube Link: <span id="ytl"></span></h1>
+  <iframe id="YouTube"  allow="accelerometer; autoplay;">
+
+  </iframe>
+  <h1>Dicription</h1>
+  <p id="dis"></p>
+  <h1>Song Year: <span id="songYear"></span></h1>
+  </div>
+   
     <script src="index.js"></script>
   </body>
 </html>
+
